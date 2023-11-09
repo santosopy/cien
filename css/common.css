@@ -67,6 +67,9 @@ html body img {
   }
 }
 
+.about {
+  padding-top: 30px;
+}
 .about .wrap {
   max-width: calc(1000px + 2rem);
   margin: auto;
@@ -130,8 +133,16 @@ html body img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .about .wrap .checklist .list ul {
+    max-width: 205px;
+    width: 100%;
+  }
+}
 .about .wrap .checklist .list ul li {
   display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .component {

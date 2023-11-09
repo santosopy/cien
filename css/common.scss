@@ -98,6 +98,8 @@ html{
 }
 
 .about{
+    padding-top: 30px;
+
     .wrap{
         @include wrap();
         
@@ -150,9 +152,15 @@ html{
                     justify-content: center;
                 }
 
-                ul{                
+                ul{  
+                    @include media(sp){
+                        max-width: 205px;
+                        width: 100%;
+                    }              
                     li{
                         display: flex;
+                        align-items: center;
+                        gap: 5px;
                     }
                 }
             }
