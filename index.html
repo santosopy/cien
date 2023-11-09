@@ -18,29 +18,35 @@
 <body id="app">
     
     <main>
-        <section class="main_visual">
+        <section class="main_visual" id="mainVisual">
             <picture>
                 <source srcset="./img/mainvisual_sp.jpg" media="(max-width: 480px)" />
                 <img src="./img/mainvisual.jpg" alt="urutsuya" />
             </picture>
+            <h2 class="wow fadeInUp">
+                サロンクオリティーをご自宅で <br>
+                ハイダメージ毛専用<br class="is_sp">こだわりの艶髪トリートメント
+            </h2>
         </section>
+        <script>
+            mainVisual.style.height = `${window.innerHeight}px`
+            window.onresize = () => {
+                mainVisual.style.height = `${window.innerHeight}px`
+            }
+        </script>
 
         <section class="about">
             <div class="wrap">
-                <h3 class="wow fadeInUp">
-                    サロンクオリティーをご自宅で <br>
-                    ハイダメージ毛専用<br class="is_sp">こだわりの艶髪トリートメント
-                </h3>
-                <h4 class="wow fadeInUp">艶美人への未来を切り開きましょう！</h4>
-                <h5>
+                <h3 class="wow fadeInUp">艶美人への未来を切り開きましょう！</h3>
+                <h4 class="wow fadeInUp">
                     傷んだ髪から艶美人へ。<br class="is_sp">髪の蘇り、艶やかさへの変化。<br>
                     ヘアケアすることで髪の美しさを取り戻し、指先<br class="is_sp">で感じる滑らかさと自信を手に入れる。
-                </h5>
+                </h4>
                 <div class="checklist class="wow fadeInUp"">
-                    <h6>
+                    <h5>
                         こんな方におすすめ
                         <span>cien Professional Quality</span>
-                    </h6>
+                    </h5>
                     <div class="list">
                         <ul>
                             <li>
@@ -77,7 +83,7 @@
         </section>
 
         <section class="component">
-            <div class="title">
+            <div class="title wow fadeIn">
                 <picture>
                     <source srcset="./img/component.png" width="224" media="(max-width: 480px)" />
                     <img src="./img/component.png" width="320" alt="component" />
@@ -87,7 +93,7 @@
                 <div class="inner">
                     <div class="column">
                         <div class="column-inner">
-                            <div class="column-inner__img">
+                            <div class="column-inner__img wow fadeIn">
                                 <picture>
                                     <source srcset="./img/component_white_text.png" width="25" media="(max-width: 480px)" />
                                     <img src="./img/component_white_text.png" width="34" alt="component" />
@@ -97,40 +103,40 @@
                                     <img src="./img/component_white.png" width="183" alt="component" />
                                 </picture>
                             </div>
-                            <div class="detail">
+                            <div class="detail wow fadeIn">
                                 <h3>cien インテンシブケアトリートメント</h3>
                                 <h4>
                                     ハイダメージ毛は髪に必要な栄養が失われた状態！！失われた栄養補うための有効成分を惜しみなく配合。お風呂場のデイリーケアで艶美人のファーストステップ。
                                 </h4>
                             </div>
                             <ul>
-                                <li>マグネシウム塩</li>
-                                <li>ファイバーハンス</li>
-                                <li>活性ケラチン</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">マグネシウム塩</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">ファイバーハンス</li>
+                                <li class="wow fadeIn" data-wow-delay="0.3s">活性ケラチン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.4s">
                                     <h5>内部</h5>
                                     <p>インナー</p>
                                 </li>
                             </ul>
                             <ul>
-                                <li>マテラパウダー</li>
-                                <li>アスタキサンチン</li>
-                                <li>活性ケラチン</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">マテラパウダー</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">アスタキサンチン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.3s">活性ケラチン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.4s">
                                     <h5>外部</h5>
                                     <p>アウター</p>
                                 </li>
                             </ul>
                             <ul>
-                                <li>シャイニー<br>フラーレン</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">シャイニー<br>フラーレン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">
                                     <h5>熱反応</h5>
                                     <p>ヒート</p>
                                 </li>
                             </ul>
                             <ul>
-                                <li>サボン</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">サボン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">
                                     <h5>香り</h5>
                                     <p>フレグランス</p>
                                 </li>
@@ -139,7 +145,7 @@
                     </div>
                     <div class="column reverse">
                         <div class="column-inner">
-                            <div class="column-inner__img">
+                            <div class="column-inner__img wow fadeIn">
                                 <picture>
                                     <source srcset="./img/component_black_text.png" width="25" media="(max-width: 480px)" />
                                     <img src="./img/component_black_text.png" width="34" alt="component" />
@@ -149,39 +155,39 @@
                                     <img src="./img/component_black.png" width="208" alt="component" />
                                 </picture>
                             </div>
-                            <div class="detail">
+                            <div class="detail wow fadeIn">
                                 <h3>cien インテンシブケアミスト</h3>
                                 <h4>
                                     ドライヤー・アイロン・コテの熱によるダメージ、日々の生活で失われやすい油分を補給。熱を利用し、キューティクルを整えることで指通りを良くし、艶美人へのセカンドステップ。
                                 </h4>
                             </div>
                             <ul>
-                                <li>ナノ化CMC</li>
-                                <li>加水分解<br>ケラチン</li>
-                                <li>グルコン酸Ca</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">ナノ化CMC</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">加水分解<br>ケラチン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.3s">グルコン酸Ca</li>
+                                <li class="wow fadeIn" data-wow-delay="0.4s">
                                     <h5>補修</h5>
                                     <p>ケア</p>
                                 </li>
                             </ul>
                             <ul>
-                                <li>グルコノラクトン</li>
-                                <li>マレイン酸<br>ポリマー</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">グルコノラクトン</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">マレイン酸<br>ポリマー</li>
+                                <li class="wow fadeIn" data-wow-delay="0.3s">
                                     <h5>補修</h5>
                                     <p>ケア</p>
                                 </li>
                             </ul>
                             <ul>
-                                <li>レブリン酸</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">レブリン酸</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">
                                     <h5>補修</h5>
                                     <p>リアクション</p>
                                 </li>
                             </ul>
                             <ul>
-                                <li>ダマスクローズ</li>
-                                <li>
+                                <li class="wow fadeIn" data-wow-delay="0.1s">ダマスクローズ</li>
+                                <li class="wow fadeIn" data-wow-delay="0.2s">
                                     <h5>香り</h5>
                                     <p>フレグランス</p>
                                 </li>
@@ -195,13 +201,13 @@
         <section class="effect">
             <div class="wrap">
                 <div class="inner">
-                    <img src="./img/effect-img.jpg" alt="effect" />
+                    <img src="./img/effect-img.jpg" alt="effect" class="wow fadeInLeft" />
                     <picture>
                         <source srcset="./img/effect.png" width="122" media="(max-width: 480px)" />
-                        <img src="./img/effect.png" width="174" alt="effect" />
+                        <img src="./img/effect.png" width="174" alt="effect" class="wow fadeInDown" />
                     </picture>
                 </div>
-                <div class="description">
+                <div class="description wow fadeInRight">
                     <h3>
                         理想のヘアースタイルになれる。<br>うるツヤ髪で毎日が輝く。
                     </h3>
@@ -212,7 +218,7 @@
             </div>
         </section>
 
-        <section class="effect_circle">
+        <section class="effect_circle wow fadeInUp">
             <div class="wrap">
                 <div class="circle">
                     <picture>
@@ -226,13 +232,13 @@
         <section class="how_to">
             <div class="wrap">
                 <div class="inner">
-                    <img src="./img/pro-img.jpg" alt="effect" />
+                    <img src="./img/pro-img.jpg" alt="effect" class="wow fadeInRight" />
                     <picture>
                         <source srcset="./img/how_to.png" width="209" media="(max-width: 480px)" />
-                        <img src="./img/how_to.png" width="299" alt="effect" />
+                        <img src="./img/how_to.png" width="299" alt="effect" class="wow fadeInDown" />
                     </picture>
                 </div>
-                <div class="description">
+                <div class="description wow fadeInLeft">
                     <h3>
                         プロがおすすめ！この2点セットが最強。<br>トリートメント＆ミストの使用方法。
                     </h3>
@@ -253,8 +259,17 @@
                                     <source srcset="./img/step_1.png" width="308" media="(max-width: 480px)" />
                                     <img src="./img/step_1.png" width="444" alt="effect" />
                                 </picture>
-                                <p>シャンプー後、水気を切ってダメージ部分全体になじませます。</p>
-                                <i>▼</i>
+                                <p>シャンプー後、水気を切って<br class="is_sp">ダメージ部分全体になじませます。</p>
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_10_2)">
+                                        <path d="M15.04 0L7.52 13.02L0 0H15.04Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_2">
+                                            <rect width="15.04" height="13.02" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
                             </li>
                             <li>
                                 <picture>
@@ -262,7 +277,16 @@
                                     <img src="./img/step_2.png" width="444" alt="effect" />
                                 </picture>
                                 <p>5分程置いた後しっかりと洗い流します。</p>
-                                <i>▼</i>
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_10_2)">
+                                        <path d="M15.04 0L7.52 13.02L0 0H15.04Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_2">
+                                            <rect width="15.04" height="13.02" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
                             </li>
                             <li>
                                 <picture>
@@ -270,7 +294,16 @@
                                     <img src="./img/step_3.png" width="444" alt="effect" />
                                 </picture>
                                 <p>髪全体をタオルドライ</p>
-                                <i>▼</i>
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_10_2)">
+                                        <path d="M15.04 0L7.52 13.02L0 0H15.04Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_2">
+                                            <rect width="15.04" height="13.02" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
                             </li>
                             <li>
                                 <picture>
@@ -278,7 +311,16 @@
                                     <img src="./img/step_4.png" width="444" alt="effect" />
                                 </picture>
                                 <p>ハイダメージ部分に5cm〜10cm程離してスプレー。</p>
-                                <i>▼</i>
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_10_2)">
+                                        <path d="M15.04 0L7.52 13.02L0 0H15.04Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_2">
+                                            <rect width="15.04" height="13.02" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
                             </li>
                             <li>
                                 <picture>
@@ -294,13 +336,113 @@
                                     <img src="./img/step_result.png" width="444" alt="effect" />
                                 </picture>
                                 <p>アイロンで仕上げます。</p>
-                                <i>▼</i>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="voice">
+            <div class="wrap">
+                <div class="title wow fadeIn">
+                    <img src="./img/voice.png" alt="voice" />
+                </div>
+                <ul>
+                    <li class="wow fadeIn">
+                        <picture>
+                            <source srcset="./img/voice_img.png" width="47" media="(max-width: 480px)" />
+                            <img src="./img/voice_img.png" width="57" alt="voice" />
+                        </picture>
+                        <div class="caption">
+                            <h3>1回使用しただけで違う！</h3>
+                            <p>
+                                常にブリーチしている髪に使用。1回使用しただけで違いがすごく出ます。本当にビックリしました。毛先に馴染ませて寝ると次の日サラサラです（40代主婦）
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wow fadeIn">
+                        <picture>
+                            <source srcset="./img/voice_img2.png" width="47" media="(max-width: 480px)" />
+                            <img src="./img/voice_img2.png" width="57" alt="voice" />
+                        </picture>
+                        <div class="caption">
+                            <h3>寝癖が直る♪</h3>
+                            <p>
+                                いつも使っていたトリートメントの代わりに使っていますが、翌朝髪がしっとりします。<br>
+                                また、お風呂上りにこれを付けてからドライヤーをして寝ると、次の日の寝ぐせがびっくりするぐらいおさまります。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wow fadeIn">
+                        <picture>
+                            <source srcset="./img/voice_img3.png" width="47" media="(max-width: 480px)" />
+                            <img src="./img/voice_img3.png" width="57" alt="voice" />
+                        </picture>
+                        <div class="caption">
+                            <h3>お風呂タイムが楽しみ♪</h3>
+                            <p>
+                                ・トリートメント <br>
+                                髪になじませて流した後、トゥルトゥルの手触りになり驚きでした。香りもとても良くて、お風呂タイムが楽しみになりました。 <br>
+                                ・流さないトリートメント <br>
+                                乾かす前にシュッシュッと吹きかけると、こちらもとてもいい香りで癒されます。ドライヤーの時間も短くなって快適です。美容室でトリートメントしたサラサラの手触りが、家で続くのが嬉しいです。（20代会社員）
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wow fadeIn">
+                        <picture>
+                            <source srcset="./img/voice_img4.png" width="47" media="(max-width: 480px)" />
+                            <img src="./img/voice_img4.png" width="57" alt="voice" />
+                        </picture>
+                        <div class="caption">
+                            <h3>美容室に行った後の様！</h3>
+                            <p>
+                                インテンシブケアトリートメントを洗い流した後には、もうツルツルでびっくりしました。<br>
+                                タオルドライ後、インテンシブケアミストし、ドライヤーで乾かしたらいつものバサつきはなくサラサラの手触りでした。翌朝、アイロンをすると美容室後のサラ艶ヘアーに！これは必須です♪（40代会社員）
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="wrap">
+                <div class="title">
+                    <picture>
+                        <source srcset="./img/product.png" width="163" media="(max-width: 480px)" />
+                        <img src="./img/product.png" width="233" alt="product" />
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source srcset="./img/product_1.png" width="313" media="(max-width: 480px)" />
+                        <img src="./img/product_1.png" width="442" alt="cien  インテンシブケア
+                        ミスト＆トリートメント2点セット" />
+                    </picture>
+                    <div class="description">
+                        <h3>
+                            cien  インテンシブケア <br>
+                            ミスト＆トリートメント2点セット
+                        </h3>
+                        <h4>
+                            ¥7,700<span>（税込）</span>
+                        </h4>
+                        <p>
+                            【cien インテンシブケアミスト　200ml】 <br>
+                            ●洗い流さないトリートメント <br>
+                            高分子ケラチン・レブリン酸による内部補修+ナノ化CMCで日々失われやすい油分を補給しツヤ、手触りを持続させるパーフェクトミスト <br>
+                             <br>
+                            【cien インテンシブケアトリートメント　200g】 <br>
+                            ●洗い流すトリートメント <br>
+                            活性ケラチン・ファイバーハンスによる内部補修+シャイニーフラーレン配合で熱処理ダメージからも髪を守り外部補修をおこなうパーフェクトトリートメント
+                        </p>
+                        <a href="https://urutsuya.style/shop/products/detail/6" class="button" target="_blank" rel="noopener noreferrer">BUY</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>
